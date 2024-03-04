@@ -27,10 +27,16 @@ hr{
     border-top: 5px solid  !important;
 }
 
-p{
+.yeah{
     font-family: "Poppins", sans-serif !important;
 }
 
-#yeah{
-    font-family: "Poppins", sans-serif !important;
+.par1{
+    margin-right: 100px !important;
+}
+
+@media(max-width:425px){
+    .par1{
+        margin-right: 0px!important;
+    }
 }
