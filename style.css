@@ -32,11 +32,44 @@ hr{
 }
 
 .par1{
-    margin-right: 100px !important;
+    margin-right: 50px !important;
+    /* margin-left: -100px !important; */
 }
+
+.dflex{
+    display: flex!important;
+}
+
+    ::-webkit-scrollbar{
+        width: 10px !important;
+        border-radius: 10px !important;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: whitesmoke !important;
+        border-radius: 10px !important;
+
+    }
+    ::-webkit-scrollbar-thumb{
+        border-radius: 10px !important;
+        background-color: rgb(0, 0, 0) !important;
+    }
 
 @media(max-width:425px){
     .par1{
         margin-right: 0px!important;
+    }
+    #log1{
+        margin-left: 0px !important;
+        width: 150px !important;
+    }
+    #top{
+        margin-top: 0px !important;
+    }
+    #con{
+        font-size: 40px !important;
+        margin-top: 15px !important;
+    }
+    #conlog{
+        width: 90px !important;
     }
 }

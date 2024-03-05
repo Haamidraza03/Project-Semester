@@ -12,7 +12,7 @@
     <!-- Navbar start  -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark justify-content-center">
         <div class="container justify-content-center">
-          <a class="navbar-brand text-center h1 mt-2 " href="#">Project Semester</a>
+          <a class="navbar-brand text-center h1 mt-2" href="#" id="ps">Project Semester</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -26,8 +26,8 @@
     <!-- main content  -->
     <center>
         <div class="container-fluid mt-5 justify-content-center p-3">
-            <div class="row justify-content-center mt-5 ms-0">
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player class="p-0 mt-5" src="https://lottie.host/c696d2db-5cc7-4603-a48f-f1f38d13b5db/JIWf3qEWVH.json" background="#FFFFFF" speed="1" loop autoplay direction="1" style="width: 100px;" mode="normal"></lottie-player>
+            <div class="row justify-content-center mt-5 ms-0" id="top">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player class="p-0 mt-5" id="log1" src="https://lottie.host/c696d2db-5cc7-4603-a48f-f1f38d13b5db/JIWf3qEWVH.json" background="#FFFFFF" speed="1" loop autoplay direction="1" style="width: 100px; margin-left: -100px;" mode="normal"></lottie-player>
                 <div class="col-md-4 mt-5 par1" style="text-align: start;">
                     <p class="mb-0">Get the St. John</p>
                     <div class="fs-1 mt-0">
@@ -40,7 +40,7 @@
                 <div class="col-md-3 mt-5" style="text-align: justify;">
                     <div class="fs-1 yeah">Yeah, we know the drill, we've been through it all. Just swipe and paste whatever you need from here.</div>
                     <form>
-                        <input type="search" placeholder="Search Here Juniors" id="yeah" class="w-75 mt-3 bi bi-search rounded-1 border-1 border-end-0 p-2"><i class="bi bi-search  border border-dark border-1 border-start-0 rounded-end-1 pe-3" style="padding-top:10px;padding-bottom: 10px;"></i>
+                        <center><input type="search" placeholder="Search Here Juniors" id="yeah" class="w-75 mt-3 bi bi-search rounded-1 border-1 border-end-0 p-2"><i class="bi bi-search  border border-dark border-1 border-start-0 rounded-end-1 pe-3" style="padding-top:10px;padding-bottom: 10px;"></i></center>
                     </form>
                 </div>
             </div>
@@ -48,10 +48,45 @@
             <p class="text-center fs-5 mt-3">Drop your College ID For Getting Newsletters From Seniors</p>
 
             <form>
-              <input type="text" placeholder="@sjcem.edu.in" class="rounded-1 border border-end-0 p-3 border-dark fs-5 w-25"><button class="yeah text-white bg-dark py-3 fs-5 rounded-2 px-4">Submit</button>
+              <input type="text" placeholder="@sjcem.edu.in" class="rounded-1 border border-end-0 p-2 border-dark w-25"><button class="yeah text-white bg-dark py-2 rounded-2 px-3">Submit</button>
             </form>
 
             <p class="text-center col-md-9 mt-3">College doesn't give a damn in exchange for fees. We got somethings like networks and our information regarding meet-ups, events, hackathons, Mumbai networking stuff in your mail for free. So drop your mail and get it for free and some opportunities we got as your college doesn't have a "p" of placement</p>
+
+            <div class="dflex justify-content-center mt-5">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/527434ed-b31c-4ee9-8486-311707242355/JnRvXw0Bvf.json" background="#FFFFFF" speed="1" class="p-0 rounded-circle" style="width: 180px; border-radius: 50%;" loop autoplay direction="1" id="conlog" mode="normal"></lottie-player>
+              <div class="mt-4 p-0" style="font-size: 100px;" id="con">CONTENT</div>
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/527434ed-b31c-4ee9-8486-311707242355/JnRvXw0Bvf.json" background="#FFFFFF" speed="1" class="p-0 rounded-circle" style="width: 180px; border-radius: 50%;" loop autoplay direction="1" id="conlog" mode="normal"></lottie-player> 
+            </div>
+
+            <textarea cols="35" rows="10">
+              Sem 1 - Assignments
+              Sem 2 - Assignments
+              Sem 3 - Assignments
+              Sem 4 - Assignments
+              Sem 5 - Assignments
+              Sem 6 - Assignments
+              Sem 7 - Assignments
+              Sem 8 - Assignments
+
+              Sem 1 - Experiments
+              Sem 2 - Experiments
+              Sem 3 - Experiments
+              Sem 4 - Experiments
+              Sem 5 - Experiments
+              Sem 6 - Experiments
+              Sem 7 - Experiments
+              Sem 8 - Experiments
+
+              Sem 1 - IAT Campus Paper
+              Sem 2 - IAT Campus Paper
+              Sem 3 - IAT Campus Paper
+              Sem 4 - IAT Campus Paper
+              Sem 5 - IAT Campus Paper
+              Sem 6 - IAT Campus Paper
+              Sem 7 - IAT Campus Paper
+              Sem 8 - IAT Campus Paper
+            </textarea>
 
         </div>
     </center>
@@ -63,12 +98,15 @@
 
     <!-- <script type="text/javascript">
         var nav = document.querySelector('nav');
+        var ps = document.getElementById('ps');
   
         window.addEventListener('scroll', function () {
           if (window.pageYOffset > 100) {
             nav.classList.add('bg-dark', 'shadow');
+            ps.classList.add('text-white');
           } else {
             nav.classList.remove('bg-dark', 'shadow');
+            ps.classList.remove('text-white');
           }
         });
     </script> -->
